@@ -178,6 +178,7 @@ public class Registration
 	    List<String> browserTabs = new ArrayList<String>(driver.getWindowHandles());
 	    driver.switchTo().window(browserTabs.get(0));
 	    driver.switchTo().window(browserTabs.get(1));
+	    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	    driver.findElement(By.xpath("//body/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]")).click();    
 	}
 	
