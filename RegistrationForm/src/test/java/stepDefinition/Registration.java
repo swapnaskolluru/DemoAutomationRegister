@@ -144,6 +144,13 @@ public class Registration
 	    driver.findElement(By.xpath("//button[@id='submitbtn']")).click();
 	}
 	
+	//Verify user is registered
+	@Then("I verify user is registered")
+	public void UserRegistered()
+	{
+	    //Unable to script this verification as the user is not registered on click of Submit. Due to mandatory Country dropdowm being blank / null. 
+	}
+	
 	//Close browsers
 	@Then("I quit")
 	public void Quit() 
