@@ -16,6 +16,7 @@ Feature: Registration
 		And I enter Password
 		And I enter Confirm Password
 		Then I click on Submit 
+	#	And I verify user is registered
 		And I quit 
 	
 	Scenario: To verify the Refresh button clears all the filled in data
